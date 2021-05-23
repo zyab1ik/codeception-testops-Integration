@@ -211,20 +211,6 @@ if [[ ${exit_code} -ne 0 ]]; then
  # Get Allure launch id for message link
  ALLURE_JOB_RUN_ID=$(allurectl launch list -p "${ALLURE_PROJECT_ID}" --no-header | grep "${CI_PIPELINE_ID}" | cut -d' ' -f1 || true)
  export ALLURE_JOB_RUN_ID
-
- docker login -u gitlab-ci-token -p "${CI_JOB_TOKEN}" "${CI_REGISTRY}"
- docker run --rm \
-   -e JIRA_PASSWORD="${JIRA_PASSWORD}" \
-   -e JIRA_USERNAME="${JIRA_USERNAME}" \
-   -e CI_COMMIT_BRANCH="${CI_COMMIT_BRANCH}" \
-   -e CI_JOB_URL="${CI_JOB_URL}" \
-   -e CI_PROJECT_NAME="${CI_PROJECT_NAME}" \
-   -e CI_PROJECT_URL="${CI_PROJECT_URL}" \
-   -e CI_PIPELINE_URL="${CI_PIPELINE_URL}" \
-   -e GITLAB_USER_LOGIN="${GITLAB_USER_LOGIN}" \
-   registry.stripchat.dev/infrastructure/ansible \
-   python3 /docker/scripts/slack.py "test_failed" "${1}" "${DEPLOY_CHANNEL}" ":skull:" "${ALLURE_JOB_RUN_ID}"
-fi
 ```
 
 Вот так это может выглядеть у вас в Slack:
