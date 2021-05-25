@@ -371,7 +371,7 @@ public function createInviteCode(User $user, string $scheme): Invite
 
 ## Где ручные кейсы, Карл?
 
-![](images/img_manual_cases.png)
+![](images/img_manual_cases_karl.png)
 
 Итак, стало понятно, что и где тестируется, какие тесты выполняются, как часто перезапускаются и какие дают результаты
 по итогам прогонов. Кажется, все! или нет? Ах да! Мы забыли про ручные кейсы.
