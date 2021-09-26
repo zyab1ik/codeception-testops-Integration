@@ -1,4 +1,4 @@
-# testops-integration
+# Allure Testops. Integration
 Статья про теринстый путь внедрения Allure Testops в текущий стек технологий
 
 Контактная информация:
