@@ -9,7 +9,6 @@
 По вопросам касательно статьи можно связаться по следующим контактам:
 
 Abramov Aleksandr
-* Mob (Cy): +357 (968) 0-12-12
 * Telegram: [zyab1ik](https://t.me/zyab1ik)
 * E-mail: sashka.abramov@gmail.com
 
