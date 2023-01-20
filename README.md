@@ -3,6 +3,7 @@
 
 1. Ссылка на habr статью: [Allure. В поисках почти идеальной TMS]
 2. English vesrion: [Wisebits Story: Merging manual and automated testing into one place]
+3. Пример интеграции c [codeception](https://github.com/zyab1ik/codeception-allure-integration.git)
 
 Контактная информация:
 --------------
